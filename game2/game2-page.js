@@ -118,6 +118,7 @@ function checkIntersections() {
 
     if (!intersection || !isInsideFigure(intersection.x, intersection.y)) {
         alert("Фигура не разделилась на 4 части");
+        restartButton.style.display = 'block';
     } else {
         calculateResult();
     }
@@ -144,7 +145,7 @@ function calculateResult(){
     } else {
         restartButton.style.display = 'none';
 
-        window.location.href = `index.html?showStats=true&user=${encodeURIComponent(userName)}&score=${totalScore}`;
+        window.location.href = `../index.html?showStats=true&user=${encodeURIComponent(userName)}&score=${totalScore}`;
     }
 }
 function resetRound() {

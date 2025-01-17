@@ -103,7 +103,16 @@ canvas:hover {
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-#auth-page, #end-page{
+#auth-page{
+  background-color: #ecf0f1;
+  padding: 30px;
+  margin: 50px auto;
+  width: 30%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#end-page{
   background-color: #ecf0f1;
   padding: 30px;
   margin: 50px auto;
