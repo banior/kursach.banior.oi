@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Раздели фигуру</title>
+</head>
+<body>
+  <div id="auth-page">
+    <h1>Добро пожаловать!</h1>
+    <p>Введите ваш никнейм</p>
+    <input type="text" id="username" placeholder="Ваш ник">
+    <button id="page1-button">Игра на время</button>
+    <button id="page2-button">Обычный режим</button>
+    <p id="auth-error" class="error"></p>
+  </div>
+
+  <div id="game-page" style="display: none;">
+    <h1>Разрежь фигуру на 4 части равной площади</h1>
+    <p class="nickName">Никнейм: <span id="player-name"></span></p>
+    <p id="timer-display">Время: 20 сек</p>
+    <div id="game-area">
+      <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <div class="controls">
+      <p>Осталось разрезов: <span id="steps-left">2</span></p>
+    </div>
+  </div>
+
+<div id="end-page" style="display: none;">
+  <h1>Игра завершена!</h1>
+  <p>Поздравляем, <span id="final-player-name"></span>!</p>
+  <p>Время прохождения: <span id="final-time"></span> секунд.</p>
+
+  <h2>Статистика предыдущих игр:</h2>
+  <ul id="stats-list"></ul>
+
+  <button id="restart-button">Начать заново</button>
+</div>
+<script>
+  document.getElementById("restart-button").addEventListener("click", function() {
+    location.reload(); // Перезагружает страницу
+  });
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
