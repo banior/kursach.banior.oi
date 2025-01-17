@@ -137,6 +137,7 @@ function calculateResult(){
             figure.points[2].x, figure.points[2].y,
             firstLine, secondLine);
     }
+    alert(calculateOverallSuccess(areas) + "/100");
     totalScore += calculateOverallSuccess(areas);
     if (currentRound < totalRounds) {
         currentRound++;
