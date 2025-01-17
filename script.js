@@ -181,7 +181,7 @@ function calculateResult(){
     const distanceY = Math.abs(lineY - centerY);
     result += Math.max(100 - distanceY, 0);
   }
-
+  alert(result + "/200")
   return result;
 }
 
