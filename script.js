@@ -75,7 +75,7 @@ page2Button.addEventListener("click", () => {
   if (username) {
     playerNameDisplay.textContent = username;
     authPage.style.display = "none";
-    window.location.href = `game2/game2-page.html?user=${encodeURIComponent(username)}`;
+    window.location.href = `./game2/game2-page.html?user=${encodeURIComponent(username)}`;
   } else {
     authError.textContent = "Пожалуйста, введите ваше имя!";
   }
